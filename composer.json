@@ -1,0 +1,22 @@
+{
+  "name": "arth/php52-structure",
+  "description": "php5.2 implementation of basic structures",
+  "license": "proprietary",
+  "keywords":  ["MedInTech_Snake_Loader"],
+  "authors": [
+    {
+      "name": "Alexander Deider",
+      "email": "arth.inbox@gmail.com"
+    }
+  ],
+  "autoload": {
+    "classmap": ["src/MedInTech"]
+  },
+  "autoload-dev": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5"
+  },
+  "require": {
+  }
+}
