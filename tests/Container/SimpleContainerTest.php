@@ -18,7 +18,7 @@ class SimpleContainerTest extends TestCase
     $this->assertTrue($c->has('null'));
 
     $this->assertEquals(array('one', 'two', 'three', 'null'), $c->keys());
-    $this->assertEquals(array(1, 2, 3, null), $c->all());
+    $this->assertEquals(array('one' => 1, 'two' => 2, 'three' => 3, 'null' => null), $c->all());
     $c->remove('three');
     $this->assertEquals(3, $c->count());
     $this->assertFalse($c->has('three'));

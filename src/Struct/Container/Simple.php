@@ -21,8 +21,8 @@ class MedInTech_Struct_Container_Simple extends ArrayObject implements MedInTech
   public function all()
   {
     $result = array();
-    foreach ($this->getArrayCopy() as $value) {
-      $result[] = $this->convertOutValue($value);
+    foreach ($this->getArrayCopy() as $k => $value) {
+      $result[$k] = $this->convertOutValue($value);
     }
 
     return $result;
